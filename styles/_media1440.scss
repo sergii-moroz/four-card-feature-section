@@ -1,0 +1,58 @@
+@media screen and (min-width: 1300px) {
+
+    .container {
+        //border: 1px solid black; //temporary
+        width: 91%;
+        margin: 0 auto;
+        padding: 7.6rem;
+
+        header {
+            h1 {
+                font-size: 3.65rem;
+            }
+
+            h2 {
+                font-size: 3.65rem;
+                margin-top: -0.5rem;
+            }
+
+            p {
+                width: 60%;
+                text-align: center;
+            }
+        }
+
+        .card-wrapper {
+            flex-direction: row;
+            //border: 1px solid red; //temporary
+            margin-top: 6.4rem;
+            width: 100%;
+
+            .desktop-wrapper {
+                /*display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;*/
+                width: unset;
+            }
+
+            .card {
+                width: 35rem;
+
+                .sub-card {
+                    padding: 2.8rem 3.2rem 3.0rem 3.2rem;
+
+                    p {
+                        line-height: 2.5rem;
+                    }
+
+                    img {
+                        max-height: 15rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}

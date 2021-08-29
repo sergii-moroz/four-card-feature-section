@@ -1,0 +1,113 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 8rem 3rem;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 2.44rem;
+            font-weight: 200;
+        }
+
+        h2 {
+            font-size: 2.44rem;
+            font-weight: 600;
+            color: $very-dark-blue;
+            margin-bottom: 1.6rem;
+        }
+
+        p {
+            font-size: 1.52rem;
+            color: $grayish-blue;
+            line-height: 165%;
+        }
+    }
+
+    .card-wrapper {
+        //border: 1px solid magenta; //temporary
+        margin-top: 7.5rem;
+        width: clamp(30rem, calc(100%), 40rem);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            //border: 1px solid green; //temporary
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 5px 10px hsla(234, 12%, 34%, 0.1), 0 10px 20px hsla(234, 12%, 34%, 0.1);
+
+            .header {
+                height: 4px;
+                width: 100%;
+            }
+
+            .cyan-header {
+                background-color: $cyan;
+            }
+
+            .red-header {
+                background-color: $red;
+            }
+
+            .orange-header {
+                background-color: $orange;
+            }
+
+            .blue-header {
+                background-color: $blue;
+            }
+
+            .sub-card {
+                padding: 2.2rem 2.9rem;
+                //border: 1px solid black;
+                width: 100%;
+
+                h3 {
+                    font-size: 2rem;
+                    color: $very-dark-blue;
+                }
+    
+                p {
+                    font-size: 1.33rem;
+                    color: $grayish-blue;
+                    margin-top: 0.5rem;
+                }
+    
+                img {
+                    margin-top: 3.5rem;
+                    margin-left: auto;
+                    display: block;
+                    width: 5.9rem;
+                }
+            }
+
+            
+        }
+
+        .desktop-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 8rem 3rem;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header h1 {
+  font-size: 2.44rem;
+  font-weight: 200;
+}
+
+.container header h2 {
+  font-size: 2.44rem;
+  font-weight: 600;
+  color: #4c4e61;
+  margin-bottom: 1.6rem;
+}
+
+.container header p {
+  font-size: 1.52rem;
+  color: #a3a5ae;
+  line-height: 165%;
+}
+
+.container .card-wrapper {
+  margin-top: 7.5rem;
+  width: clamp(30rem, calc(100%), 40rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+
+.container .card-wrapper .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 10px rgba(76, 78, 97, 0.1), 0 10px 20px rgba(76, 78, 97, 0.1);
+          box-shadow: 0 5px 10px rgba(76, 78, 97, 0.1), 0 10px 20px rgba(76, 78, 97, 0.1);
+}
+
+.container .card-wrapper .card .header {
+  height: 4px;
+  width: 100%;
+}
+
+.container .card-wrapper .card .cyan-header {
+  background-color: #45d3d3;
+}
+
+.container .card-wrapper .card .red-header {
+  background-color: #ea5353;
+}
+
+.container .card-wrapper .card .orange-header {
+  background-color: #fcaf4a;
+}
+
+.container .card-wrapper .card .blue-header {
+  background-color: #549ef2;
+}
+
+.container .card-wrapper .card .sub-card {
+  padding: 2.2rem 2.9rem;
+  width: 100%;
+}
+
+.container .card-wrapper .card .sub-card h3 {
+  font-size: 2rem;
+  color: #4c4e61;
+}
+
+.container .card-wrapper .card .sub-card p {
+  font-size: 1.33rem;
+  color: #a3a5ae;
+  margin-top: 0.5rem;
+}
+
+.container .card-wrapper .card .sub-card img {
+  margin-top: 3.5rem;
+  margin-left: auto;
+  display: block;
+  width: 5.9rem;
+}
+
+.container .card-wrapper .desktop-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    width: 91%;
+    margin: 0 auto;
+    padding: 7.6rem;
+  }
+  .container header h1 {
+    font-size: 3.65rem;
+  }
+  .container header h2 {
+    font-size: 3.65rem;
+    margin-top: -0.5rem;
+  }
+  .container header p {
+    width: 60%;
+    text-align: center;
+  }
+  .container .card-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 6.4rem;
+    width: 100%;
+  }
+  .container .card-wrapper .desktop-wrapper {
+    /*display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;*/
+    width: unset;
+  }
+  .container .card-wrapper .card {
+    width: 35rem;
+  }
+  .container .card-wrapper .card .sub-card {
+    padding: 2.8rem 3.2rem 3.0rem 3.2rem;
+  }
+  .container .card-wrapper .card .sub-card p {
+    line-height: 2.5rem;
+  }
+  .container .card-wrapper .card .sub-card img {
+    max-height: 15rem;
+    width: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
