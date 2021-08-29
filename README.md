@@ -41,5 +41,5 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](./desktop.png)
+![desktop](./Desktop.png)
 ![mobile](./mobile.png)
